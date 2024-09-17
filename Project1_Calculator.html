@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 350px;
+            height: 440px;
+            border: 1px solid;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            margin: 0px auto;
+            margin-top: 3%;
+            cursor: pointer;
+        }
+
+        input {
+            width: 320px;
+            margin: 0px auto;
+            border-radius: 5px;
+            height: 40px;
+            margin: 18px 5% 6% 11px;
+            font-size: 30px;
+        }
+
+        .outer {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 330px;
+            margin: 0px auto;
+        }
+
+        button {
+            width: 80px;
+            margin: 1%;
+            height: 50px;
+            font-weight: 600;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <input type="text" id="display-result" readonly><br>
+        <div class="outer">
+            <button onclick="clearall()">C</button>
+            <button onclick="one()">1</button>
+            <button onclick="two()">2</button>
+            <button onclick="plus()">+</button>
+            <button onclick="three()">3</button>
+            <button onclick="four()">4</button>
+            <button onclick="minus()">-</button>
+            <button onclick="five()">5</button>
+            <button onclick="six()">6</button>
+            <button onclick="mul()">*</button>
+            <button onclick="seven()">7</button>
+            <button onclick="eight()">8</button>
+            <button onclick="div()">/</button>
+            <button onclick="equal1()">=</button>
+            <button onclick="nine()">9</button>
+            <button onclick="zero()">0</button>
+            <button onclick="dot()">.</button>
+        </div>
+    </div>
+    <script>
+        let total_result = '';
+        document.querySelector('#display-result').value=total_result;
+        function one(){
+            total_result+=1;
+            document.querySelector('#display-result').value=total_result;
+        }
+        function two(){
+            total_result+=2;
+            document.querySelector('#display-result').value=total_result;
+        }
+        function three(){
+            total_result+=3;
+            document.querySelector('#display-result').value=total_result;
+        }
+        function four(){
+            total_result+=4;
+            document.querySelector('#display-result').value=total_result;
+        }
+
+        function five(){
+            total_result+=5;
+            document.querySelector('#display-result').value=total_result;
+        }
+        function six(){
+            total_result+=6;
+            document.querySelector('#display-result').value=total_result;
+        }
+        function seven(){
+            total_result+=7;
+            document.querySelector('#display-result').value=total_result;
+        }
+        function eight(){
+            total_result+=8;
+            document.querySelector('#display-result').value=total_result;
+        }
+
+        function nine(){
+            total_result+=9;
+            document.querySelector('#display-result').value=total_result;
+        }
+        function two(){
+            total_result+=2;
+            document.querySelector('#display-result').value=total_result;
+        }
+        function three(){
+            total_result+=3;
+            document.querySelector('#display-result').value=total_result;
+        }
+        function four(){
+            total_result+=4;
+            document.querySelector('#display-result').value=total_result;
+        }
+
+        function zero(){
+            total_result+=0;
+            document.querySelector('#display-result').value=total_result;
+        }
+        function plus(){
+            total_result=total_result+ '+';
+            document.querySelector('#display-result').value=total_result;
+        }
+        function minus(){
+            total_result=total_result+ '-';
+            document.querySelector('#display-result').value=total_result;
+        }
+        function mul(){
+            total_result=total_result+ '*';
+            document.querySelector('#display-result').value=total_result;
+        }
+
+        function div(){
+            total_result=total_result+ '/';
+            document.querySelector('#display-result').value=total_result;
+        }
+        function clearall(){
+            total_result='';
+            document.querySelector('#display-result').value=total_result;
+        }
+        function equal1(){
+            total_result=eval(total_result);
+            document.querySelector('#display-result').value=total_result;
+        }
+        function dot(){
+            total_result=total_result+ '.';
+            document.querySelector('#display-result').value=total_result;
+        }
+    </script>
+</body>
+
+</html>
